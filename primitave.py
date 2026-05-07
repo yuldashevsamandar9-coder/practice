@@ -1,3 +1,15 @@
+print("===== numbeer======")
+# In Java variable is a name storage location!
+# In Python, variable is named reference
+
+count = 100
+count_type = type(count)
+print(f"the count: {count} and type: {count_type}")
+
+result1 = count.bit_count()  # Method
+
+result2 = count.numerator  # state
+print(result1, result2)
 
 print("===== string ====")
 # Methods : upper() lower() title() find() replace()
