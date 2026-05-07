@@ -32,3 +32,11 @@ git commit -m "feat: Initial setup
 - Operation & Conditions
 - Loops
 - ....
+
+# Python nima uzi
+
+- Web sayt yaratish
+- AI
+- Data analysis
+- Avtomatlashtirish
+- Hacking
