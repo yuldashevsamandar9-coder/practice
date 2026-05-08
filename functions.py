@@ -16,7 +16,7 @@ print("======= Define vs Call =======")
 # Function malum bir operatsiyaniu amalga oshiradigan  kod blok Java shunday deyiladi
 # Pythonda esa indentation yani orasini tashlab yozilarkan aftamatiski
 
-# Define - parametr
+# Define
 
 
 def greet(a):
@@ -28,7 +28,6 @@ def greeting(b):
     return f"Hi {b}"
 
     # Call
-
     result1 = greet('Sem')
     print("result1:", result1)
 
@@ -51,6 +50,18 @@ def give_greet(name, age=22):
 result3 = give_greet(name='Justin', age=28)
 print("result3:", result3)
 
-
 result4 = give_greet("John")
 print("result4:", result4)
+
+print("======= Scope =======")
+b = 100
+
+
+# Define
+def calculate(a, ):
+    c = a * b
+    print(f"the c value: {c}")
+
+
+# Call
+calculate(50)
