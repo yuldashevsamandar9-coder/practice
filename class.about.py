@@ -56,3 +56,45 @@ print("new_message:", new_message)
 # static method
 
 Person.explain()
+
+
+print("=====  Special magic method =======")
+# Pythonning eng ishlatiladigan methodlari
+# __init__ __new__ __str__ __call__ __getitem__ __eq__ __len__ ...
+
+
+class Car:
+    description = "This class makes cars"
+
+    def __new__(cls, *args, ):
+        print("*__new__* ")
+        return super().__new__(cls)
+
+    def __init__(self, name, year):
+        self.name = name
+        self.year = year
+        print("*__init__* ")
+
+    def start_engine(self):
+        print(f"the {self.name} started engine")
+
+    def stop_engine(self):
+        print(f"the {self.name} stopped engine")
+
+    def __str__(self):
+        return f"{self.name} was produced in {self.year} year"
+
+    def __call__(self):
+        return f"{self.name} is being called!"
+
+
+my_car = Car("Ferrari", 2026)
+my_car.start_engine()
+
+
+your_car = Car("Toyota", 2025)
+print(your_car)
+
+
+response = your_car()
+print("response:", response)
