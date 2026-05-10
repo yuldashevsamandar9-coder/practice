@@ -3,7 +3,7 @@ OBJECTS
 (1) What is object
 (2) Iterable objects & Range
 (3) Dictionary
-(4) Error handling sytem
+(4) Error handling system
 
 '''
 
@@ -22,7 +22,7 @@ print(type(array))
 print(type(math))
 
 # Paradigma (Uslubiyat) > Functional programming & OOP
-# OOP 4 Concepts > Abstraction  Encapsulation Inheritence Polimorphism
+# OOP 4 Concepts > Abstraction | Encapsulation | Inheritence | Polimorphism
 
 # Call Define qismi math methodini ichiga tahlab berilgan oldindan
 result1 = math.ceil(97.7)
@@ -36,3 +36,41 @@ print("result3:", result3)
 
 result4 = ceil(31.2)
 print("result4 :", result4)
+
+print("=====  Error handling system =======")
+car_dict = dict(name="Toyota", years=2026, electric=True, speed=220)
+
+try:
+    print("passed here")
+    result = car_dict["origin"]
+    print("result:", result)
+except KeyError as err:
+    print("No origin state property found:", err)
+else:
+    print("Executed succesfully without errors")
+finally:
+    print("Final closing logic")
+print("==== Test3 ======")
+try:
+    print("passed here")
+    result = car_dict["years"]
+    print("result:", result)
+except KeyError as err:
+    print("No origin state property found:", err)
+else:
+    print("Executed succesfully without errors")
+finally:
+    print("Final closing logic")
+
+print("==== Test2 ======")
+try:
+    print("passed here")
+    result = car_dict["speed"]
+
+    print("result:", result)
+except KeyError as err:
+    print("No origin state property found:", err)
+else:
+    print("Executed succesfully without errors")
+finally:
+    print("Final closing logic")
