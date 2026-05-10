@@ -28,8 +28,10 @@ def greeting(b):
     return f"Hi {b}"
 
     # Call
-    result1 = greet('Sem')
-    print("result1:", result1)
+
+
+result1 = greet('Sem')
+print("result1:", result1)
 
 
 result2 = greeting("Justin")
