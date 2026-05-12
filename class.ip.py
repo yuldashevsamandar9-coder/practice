@@ -74,6 +74,12 @@ dog.make_voice()
 cat.make_voice()
 
 print("--------")
+print("====== Polymorpysim=====")
+
+dog.make_voice()
+cat.make_voice()
+
+
 # fish > Fish > Animal > Object
 a = isinstance(fish, Fish)
 b = isinstance(fish, Animal)
