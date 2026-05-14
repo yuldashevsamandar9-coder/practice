@@ -65,3 +65,11 @@ def introduce(**kwargs):
 # Call
 introduce(name="Justin", age=25)
 introduce(name="SAM", age=29, single=True)
+
+
+def greeting(*args, **kwargs):
+    print("*args>", args)
+    print("**kwargs>", kwargs)
+
+
+greeting("Hi", True, 10, name="Neo", age=29)
