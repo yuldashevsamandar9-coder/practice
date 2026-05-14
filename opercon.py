@@ -1,5 +1,5 @@
 '''
-Opretors & Conditions
+Operators & Conditions
  (1) Operators
  (2) Conditions
  (3) Logical Operators

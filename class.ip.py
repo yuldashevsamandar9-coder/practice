@@ -6,7 +6,7 @@ Class deep diving
 
 '''
 
-print("===== Inheritence =======")
+print("===== Inheritence =======")  # Meros
 
 
 class Animal():  # Parent

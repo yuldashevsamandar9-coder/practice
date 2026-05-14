@@ -6,7 +6,7 @@ Class deep diving
 
 '''
 # Encapsulation > public, private, procted
-# public __private (2 ta dunder quyiladi), _procted (1 ta dunder chiziq quyiladi)
+# public __private (2 ta dunder quyiladi), _procted (1 ta dunder chiziq quyiladi) # _
 print("===== Encapsulation ====")
 
 
