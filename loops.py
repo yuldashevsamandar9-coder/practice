@@ -55,7 +55,7 @@ while True:
     count += 1
     x = int(input("find number "))
     if x == 41:
-        print(" You found number in: {count} steps")
+        print(f" You found number in: {count} steps")
         break
     else:
         print("Wrong try again")
